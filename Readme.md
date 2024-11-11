@@ -1,29 +1,11 @@
-# Simple API with Node.js and Express
-This is a simple API project built with **Node.js** and **Express**.
+# Secure Password Generator (Python)
 
-## How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/alexismendozaa/proyecto1.git
-   cd proyecto1
-   ```
-2. Install the dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the server:
-   ```bash
-   npm start
-   ```
-The server should now be running on [http://localhost:3000](http://localhost:3000).
+A Python API that generates secure passwords.
 
-## API Endpoints
-- **GET /api/example**: Returns a sample response.
-- **POST /api/example**: Accepts data and returns a confirmation message.
+## Deployment with Docker
+```bash
+docker build -t password-generator .
+docker run -p 5000:5000 password-generator
 
-## Technologies Used
-- **Node.js**
-- **Express**
-
-## License
-This project is licensed under the MIT License.
+Access the API at:
+http://127.0.0.1:5000/generar_contraseña
